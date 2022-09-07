@@ -33,7 +33,7 @@ public class TC001_VerifyQuestion extends ProjectSpecificMethods{
 		.enterQuestion(question)
 		.enterDetails(details)
 		.clickAsk()
-		.verifyChatterTitle();
+		.verifyQuestion(question);
 
 	}
 
