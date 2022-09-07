@@ -6,7 +6,7 @@ import com.framework.testng.api.base.ProjectSpecificMethods;
 public class ChatterPage extends ProjectSpecificMethods {
 	
 	public ChatterPage verifyChatterTitle() {
-		pause(300);
+		pause(1000);
 		verifyTitle("Chatter Home | Salesforce");
 		reportStep("Expected title is displayed","pass");
 		return this;
@@ -39,7 +39,7 @@ public class ChatterPage extends ProjectSpecificMethods {
 	
 	public ChatterPage verifyQuestion(String data) {
 		verifyExactText(locateElement(Locators.XPATH,"//span[text()='"+data+"']"), data);
-		reportStep(data+" is matching with provided opportunity name", "pass");
+		reportStep(data+" is matching with provided value", "pass");
 		return this;
 		
 	}
